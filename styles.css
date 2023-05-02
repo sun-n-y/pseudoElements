@@ -1,24 +1,29 @@
-blockquote {
-  font-size: 2rem;
-  font-style: italic;
-  width: 50%;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: sans-serif;
+  background: black;
+}
+
+.box {
+  background: black;
+  color: white;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
 }
 
-blockquote::before {
-  content: open-quote;
-  top: -50px;
-  left: -50px;
-}
-
-blockquote::after {
-  content: close-quote;
-  bottom: -100;
-  right: -30;
-}
-
-blockquote::before,
-blockquote::after {
-  font-size: 6rem;
+.box::before {
+  content: "";
   position: absolute;
+  height: 306px;
+  width: 306px;
+  background: linear-gradient(red, orange, yellow);
+  z-index: -2;
 }

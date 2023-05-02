@@ -1,3 +1,15 @@
 h1 {
   font-size: 5rem;
 }
+
+h1::before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  background: purple;
+  display: inline-block;
+}
+
+h1::after {
+  content: "after";
+}

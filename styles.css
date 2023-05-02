@@ -1,15 +1,24 @@
-h1 {
-  font-size: 5rem;
+blockquote {
+  font-size: 2rem;
+  font-style: italic;
+  width: 50%;
+  position: relative;
 }
 
-h1::before {
-  content: "";
-  height: 20px;
-  width: 20px;
-  background: purple;
-  display: inline-block;
+blockquote::before {
+  content: open-quote;
+  top: -50px;
+  left: -50px;
 }
 
-h1::after {
-  content: "after";
+blockquote::after {
+  content: close-quote;
+  bottom: -100;
+  right: -30;
+}
+
+blockquote::before,
+blockquote::after {
+  font-size: 6rem;
+  position: absolute;
 }

@@ -14,6 +14,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   position: relative;
+  transition: all 0.5s ease;
   overflow: hidden;
 }
 
